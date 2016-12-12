@@ -11,6 +11,8 @@ deps = {
        Var('git_url') + '/chromium/src/build_overrides.git@4e8813862084fbe60077ed71b492bf1a6afeffcf',
   'src/tools/gyp':
        Var('git_url') + '/external/gyp.git@e7079f0e0e14108ab0dba58728ff219637458563',
+  'src/tools/clang':
+       Var('git_url') + '/chromium/src/tools/clang@53bdedc7a79ddb513dddeb3aea99935893c2143d',
 }
 
 hooks = [
@@ -120,5 +122,64 @@ hooks = [
       '.',
     'name':
       'sysroot'
+  },
+  {
+    'action': [
+      'python',
+      'src/tools/clang/scripts/update.py',
+      '--if-needed'
+    ],
+    'pattern':
+      '.',
+    'name':
+      'clang'
+  },
+  {
+    'action': [
+      'download_from_google_storage',
+      '--no_resume',
+      '--platform=win32',
+      '--no_auth',
+      '--bucket',
+      'chromium-clang-format',
+      '-s',
+      'src/buildtools/win/clang-format.exe.sha1'
+    ],
+    'pattern':
+      '.',
+    'name':
+      'clang_format_win'
+  },
+  {
+    'action': [
+      'download_from_google_storage',
+      '--no_resume',
+      '--platform=darwin',
+      '--no_auth',
+      '--bucket',
+      'chromium-clang-format',
+      '-s',
+      'src/buildtools/mac/clang-format.sha1'
+    ],
+    'pattern':
+      '.',
+    'name':
+      'clang_format_mac'
+  },
+  {
+    'action': [
+      'download_from_google_storage',
+      '--no_resume',
+      '--platform=linux*',
+      '--no_auth',
+      '--bucket',
+      'chromium-clang-format',
+      '-s',
+      'src/buildtools/linux64/clang-format.sha1'
+    ],
+    'pattern':
+      '.',
+    'name':
+      'clang_format_linux'
   },
 ]
