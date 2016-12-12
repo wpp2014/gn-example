@@ -108,4 +108,15 @@ hooks = [
     'name':
       'clang_format_linux'
   },
+  {
+    'action': [
+      'python',
+      'src/build/linux/sysroot_scripts/install-sysroot.py',
+      '--running-as-hook'
+    ],
+    'pattern':
+      '.',
+    'name':
+      'sysroot'
+  },
 ]
