@@ -7,6 +7,8 @@ deps = {
        Var('git_url') + '/chromium/buildtools.git@39b1db2ab4aa4b2ccaa263c29bdf63e7c1ee28aa',
   'src/build':
        Var('git_url') + '/chromium/src/build.git@7321edc3e835447b4ec75732ab683fb70ad1a5fd',
+  'src/build_overrides':
+       Var('git_url') + '/chromium/src/build_overrides.git@4e8813862084fbe60077ed71b492bf1a6afeffcf',
 }
 
 hooks = [
