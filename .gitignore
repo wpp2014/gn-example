@@ -1,2 +1,6 @@
+/build
 /buildtools
+/build_overrides
 /out*
+/third_party/llvm-build
+/tools
