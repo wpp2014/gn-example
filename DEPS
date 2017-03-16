@@ -4,15 +4,15 @@ vars = {
 
 deps = {
   'src/buildtools':
-       Var('git_url') + '/chromium/buildtools.git@39b1db2ab4aa4b2ccaa263c29bdf63e7c1ee28aa',
+       Var('git_url') + '/chromium/buildtools.git',
   'src/build':
-       Var('git_url') + '/chromium/src/build.git@7321edc3e835447b4ec75732ab683fb70ad1a5fd',
+       Var('git_url') + '/chromium/src/build.git',
   'src/build_overrides':
-       Var('git_url') + '/chromium/src/build_overrides.git@4e8813862084fbe60077ed71b492bf1a6afeffcf',
+       Var('git_url') + '/chromium/src/build_overrides.git',
   'src/tools/gyp':
-       Var('git_url') + '/external/gyp.git@e7079f0e0e14108ab0dba58728ff219637458563',
+       Var('git_url') + '/external/gyp.git',
   'src/tools/clang':
-       Var('git_url') + '/chromium/src/tools/clang@53bdedc7a79ddb513dddeb3aea99935893c2143d',
+       Var('git_url') + '/chromium/src/tools/clang',
 }
 
 hooks = [
