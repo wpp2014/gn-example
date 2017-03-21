@@ -4,6 +4,6 @@
 ```shell
 mkdir example
 cd example
-gclient config --name=src git@github.com:wpp2014/gn-example.git
+gclient config --name=src https://github.com/wpp2014/gn-example.git
 gclient sync
 ```
