@@ -28,10 +28,6 @@
 gclient_gn_args_file = 'src/build/config/gclient_args.gni'
 gclient_gn_args = [
   'checkout_android',
-  'checkout_android_native_support',
-  'checkout_libaom',
-  'checkout_nacl',
-  'checkout_oculus_sdk',
 ]
 
 vars = {
