@@ -2,5 +2,7 @@
 /buildtools
 /build_overrides
 /out*
-/third_party/llvm-build
 /tools
+
+/third_party/depot_tools
+/third_party/llvm-build
