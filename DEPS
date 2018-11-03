@@ -27,10 +27,12 @@
 #  git cl upload
 gclient_gn_args_file = 'src/build/config/gclient_args.gni'
 gclient_gn_args = [
+  'build_with_chromium',
   'checkout_android',
 ]
 
 vars = {
+  'build_with_chromium': True,
   'chromium_git': 'https://chromium.googlesource.com',
 }
 
