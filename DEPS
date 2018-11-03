@@ -61,6 +61,8 @@ deps = {
     Var('chromium_git') + '/chromium/deps/icu',
   'src/third_party/zlib':
     Var('chromium_git') + '/chromium/src/third_party/zlib',
+  'src/third_party/modp_b64':
+    Var('chromium_git') + '/chromium/src/third_party/modp_b64',
 }
 
 hooks = [
