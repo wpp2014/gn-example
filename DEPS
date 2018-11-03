@@ -57,6 +57,8 @@ deps = {
     Var('chromium_git') + '/external/github.com/google/googletest',
   'src/third_party/icu':
     Var('chromium_git') + '/chromium/deps/icu',
+  'src/third_party/zlib':
+    Var('chromium_git') + '/chromium/src/third_party/zlib',
 }
 
 hooks = [
