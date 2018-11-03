@@ -49,6 +49,8 @@ deps = {
     Var('chromium_git') + '/chromium/src/tools/clang.git' + '@' + '6d1123adbdb7bb6b094e71769282b056df7f4c05',
   'src/base':
     Var('chromium_git') + '/chromium/src/base' + '@' + 'c4078779f08157ba576783b4399c0572cfa194ab',
+  'testing':
+    Var('chromium_git') + '/chromium/src/testing' + '@' + '45e5e8d17027d0de4ca38e84ad6a2ba52593774f',
 }
 
 hooks = [
@@ -281,4 +283,5 @@ include_rules = [
 recursedeps = [
   # buildtools provides clang_format, libc++, and libc++abi
   'src/buildtools',
+  'src/third_party/boringssl',
 ]
