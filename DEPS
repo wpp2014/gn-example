@@ -38,15 +38,17 @@ deps = {
   'src/buildtools':
     Var('chromium_git') + '/chromium/buildtools.git' + '@' +  '0b71401b977fba99eb0c7bb01bdb3338f45bd911',
   'src/build':
-       Var('chromium_git') + '/chromium/src/build.git' + '@' + 'c9bb242447a932bb8ef983313bc5385605e1abcb',
+    Var('chromium_git') + '/chromium/src/build.git' + '@' + 'c9bb242447a932bb8ef983313bc5385605e1abcb',
   'src/build_overrides':
-       Var('chromium_git') + '/chromium/src/build_overrides.git' + '@' + 'fbdf5341ce6451a494814040e4c06bcb82baa097',
+    Var('chromium_git') + '/chromium/src/build_overrides.git' + '@' + 'fbdf5341ce6451a494814040e4c06bcb82baa097',
   'src/tools/gyp':
     Var('chromium_git') + '/external/gyp.git' + '@' + 'd61a9397e668fa9843c4aa7da9e79460fe590bfb',
   'src/third_party/depot_tools':
     Var('chromium_git') + '/chromium/tools/depot_tools.git' + '@' + 'e7273d25017a27aab7026bc0ef48fe9ab4e09f22',
   'src/tools/clang':
-       Var('chromium_git') + '/chromium/src/tools/clang.git' + '@' + '6d1123adbdb7bb6b094e71769282b056df7f4c05',
+    Var('chromium_git') + '/chromium/src/tools/clang.git' + '@' + '6d1123adbdb7bb6b094e71769282b056df7f4c05',
+  'src/base':
+    Var('chromium_git') + '/chromium/src/base' + '@' + 'c4078779f08157ba576783b4399c0572cfa194ab',
 }
 
 hooks = [
