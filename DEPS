@@ -38,7 +38,7 @@ deps = {
   'src/buildtools':
     Var('chromium_git') + '/chromium/buildtools.git' + '@' +  '0b71401b977fba99eb0c7bb01bdb3338f45bd911',
   'src/build':
-    Var('chromium_git') + '/chromium/src/build.git' + '@' + 'c9bb242447a932bb8ef983313bc5385605e1abcb',
+    Var('chromium_git') + '/chromium/src/build.git' + '@' + 'cf39c38e4c6b96c498f442ba0bdfaa036c690c30',
   'src/build_overrides':
     Var('chromium_git') + '/chromium/src/build_overrides.git' + '@' + 'fbdf5341ce6451a494814040e4c06bcb82baa097',
   'src/tools/gyp':
@@ -49,7 +49,7 @@ deps = {
     Var('chromium_git') + '/chromium/src/tools/clang.git' + '@' + '6d1123adbdb7bb6b094e71769282b056df7f4c05',
   'src/base':
     Var('chromium_git') + '/chromium/src/base' + '@' + 'c4078779f08157ba576783b4399c0572cfa194ab',
-  'testing':
+  'src/testing':
     Var('chromium_git') + '/chromium/src/testing' + '@' + '45e5e8d17027d0de4ca38e84ad6a2ba52593774f',
 }
 
