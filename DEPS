@@ -53,6 +53,8 @@ deps = {
     Var('chromium_git') + '/chromium/src/base',
   'src/testing':
     Var('chromium_git') + '/chromium/src/testing',
+  'src/third_party/googletest':
+    Var('chromium_git') + '/external/github.com/google/googletest',
 }
 
 hooks = [
