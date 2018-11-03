@@ -37,20 +37,22 @@ vars = {
 }
 
 deps = {
-  'src/buildtools':
-    Var('chromium_git') + '/chromium/buildtools.git',
-  'src/build':
-    Var('chromium_git') + '/chromium/src/build.git',
-  'src/build_overrides':
-    Var('chromium_git') + '/chromium/src/build_overrides.git',
-  'src/tools/gyp':
-    Var('chromium_git') + '/external/gyp.git',
-  'src/third_party/depot_tools':
-    Var('chromium_git') + '/chromium/tools/depot_tools.git',
-  'src/tools/clang':
-    Var('chromium_git') + '/chromium/src/tools/clang.git',
   'src/base':
     Var('chromium_git') + '/chromium/src/base',
+  'src/build':
+    Var('chromium_git') + '/chromium/src/build.git',
+  'src/buildtools':
+    Var('chromium_git') + '/chromium/buildtools.git',
+  'src/build_overrides':
+    Var('chromium_git') + '/chromium/src/build_overrides.git',
+  'src/tools/clang':
+    Var('chromium_git') + '/chromium/src/tools/clang.git',
+  'src/tools/gyp':
+    Var('chromium_git') + '/external/gyp.git',
+  'src/tools/win':
+    Var('chromium_git') + '/chromium/src/tools/win',
+  'src/third_party/depot_tools':
+    Var('chromium_git') + '/chromium/tools/depot_tools.git',
   'src/testing':
     Var('chromium_git') + '/chromium/src/testing',
   'src/third_party/googletest/src':
