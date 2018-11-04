@@ -3,7 +3,11 @@
 /buildtools
 /build_overrides
 /out*
+/testing
 /tools
 
 /third_party/depot_tools
+/third_party/icu
 /third_party/llvm-build
+/third_party/modp_b64
+/third_party/zlib
