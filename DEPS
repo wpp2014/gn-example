@@ -45,8 +45,6 @@ deps = {
     Var('chromium_git') + '/chromium/src/buildtools.git',
   'src/build_overrides':
     Var('chromium_git') + '/chromium/src/build_overrides.git',
-  'src/tools':
-    Var('chromium_git') + '/chromium/src/tools',
   'src/tools/clang':
     Var('chromium_git') + '/chromium/src/tools/clang.git',
   'src/tools/gyp':
