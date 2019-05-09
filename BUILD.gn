@@ -43,6 +43,6 @@ if (is_official_build) {
 
 group("gn_all") {
   deps = [
-    "//test",
+    "//base",
   ]
 }
